@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location</title>
+    <link rel="stylesheet" href="../bootstrap.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        .location__card {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+
+        }
+
+        * {
+            user-select: none;
+            font-family: "Josefin Sans", sans-serif;
+        }
+
+        details {
+            outline: none;
+        }
+    </style>
+    <link rel="stylesheet" href="../personal.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color:orange">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html" text-align="center" style="color:rgb(63, 28, 28)"> Chamunda
+                Rolling
+                Shutters</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ol-xs-1 center-block">
+                    <li class="nav-item">
+
+                        <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="GateItems.html">Gate Item</a></li>
+                            <li><a class="dropdown-item" href="Designs.html">Designs</a></li>
+                            <li><a class="dropdown-item" href="ShutterItems.html">Shutter Item</a></li>
+                            <li><a class="dropdown-item" href="OtherFabrication.html">Other Fabrication</a></li>
+                            <li><a class="dropdown-item" href="ChannelGateItem.html">Channel Gate Item</a></li>
+
+
+                        </ul>
+                    </li>
+
+                    <a class="nav-link" aria-current="page" href="#">Store Location</a>
+
+                </ul>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" id="search" placeholder="Search" aria-label="Search"
+                        onchange="openPage()">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="orange" fill-opacity="1"
+            d="M0,96L60,106.7C120,117,240,139,360,122.7C480,107,600,53,720,74.7C840,96,960,192,1080,208C1200,224,1320,160,1380,128L1440,96L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+        </path>
+    </svg>
+    <h1 style="text-align: center;margin: 20px;"> Location </h1>
+    <div class="mapouter">
+        <div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no"
+                marginheight="0" marginwidth="0"
+                src="https://maps.google.com/maps?width=720&amp;height=420&amp;hl=en&amp;q=196/8 opp. Vapi paper mills, ramdev gali ,gidc , vapi, Phase 2, GIDC, Vapi, Gujarat 396191, India&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
+                href="https://www.fridaynightfunkin.net/friday-night-funkin-mods-fnf-play-online/">Friday Night Funkin
+                Mods</a></div>
+        <style>
+            .mapouter {
+                position: relative;
+                text-align: right;
+                width: 100%;
+                height: 420px;
+            }
+
+            .gmap_canvas {
+                overflow: hidden;
+                background: none !important;
+                width: 100%;
+                height: 420px;
+            }
+
+            .gmap_iframe {
+                height: 420px !important;
+            }
+        </style>
+    </div>
+
+    <div class="location__card">
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="LocationImage/address.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Shree Chamununda Traders</h5>
+                        <p class="card-text">
+                            196/8 opp. Vapi paper mills, ramdev gali ,gidc , vapi, Phase 2, GIDC, Vapi, Gujarat 396191,
+                            India
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="orange" fill-opacity="1"
+            d="M0,160L48,165.3C96,171,192,181,288,202.7C384,224,480,256,576,240C672,224,768,160,864,122.7C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+        </path>
+    </svg>
+    <div class="footer">
+        <p>&copy; Copyright 2021 Shri Chamunda Rolling Shutters</p>
+    </div>
+
+    <script src="../bootstrap.js"></script>
+</body>
+
+</html>

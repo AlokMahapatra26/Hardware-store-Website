@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shree Chamunda Traders</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="personal.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap" rel="stylesheet">
+
+    <script>
+        var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?42218';
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = url;
+        var options = {
+            "enabled": true,
+            "chatButtonSetting": {
+                "backgroundColor": "#4dc247",
+                "ctaText": "",
+                "borderRadius": "25",
+                "marginLeft": "0",
+                "marginBottom": "20",
+                "marginRight": "20",
+                "position": "right"
+            },
+            "brandSetting": {
+                "brandName": "Shree Chamunda Rolling Shutter",
+                "brandSubTitle": "Typically replies within a hour",
+                "brandImg": "https://cdn.clare.ai/wati/images/WATI_logo_square_2.png",
+                "welcomeText": "Hi there!\nHow can I help you?",
+                "messageText": "Hello, I have a question about {{page_link}}",
+                "backgroundColor": "#0a5f54",
+                "ctaText": "Start Chat",
+                "borderRadius": "25",
+                "autoShow": false,
+                "phoneNumber": "9033826436"
+            }
+        };
+        s.onload = function () {
+            CreateWhatsappChatWidget(options);
+        };
+        var x = document.getElementsByTagName('script')[0];
+        x.parentNode.insertBefore(s, x);
+    </script>
+
+    <style>
+        .dropdown-menu {
+            background: rgba(255, 255, 255, 0.1);
+            /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
+            backdrop-filter: blur(8.5px);
+            -webkit-backdrop-filter: blur(8.5px);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+
+        .dropdown-menu li a {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark "
+        style=" position:absolute; width: 100%; background-color: transparent;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html" text-align="center" style="color:rgb(255, 255, 255);"
+                id="nav_name_brand">
+                SC Traders</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ol-xs-1 center-block">
+                    <li class="nav-item">
+
+                        <a class="nav-link" aria-current="page" href="#" style="color: white;">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="Pages/GateItems.html">Gate Item</a></li>
+                            <li><a class="dropdown-item" href="Pages/Designs.html">Designs</a></li>
+                            <li><a class="dropdown-item" href="Pages/ShutterItems.html">Shutter Item</a></li>
+                            <li><a class="dropdown-item" href="Pages/OtherFabrication.html">Other Fabrication</a></li>
+                            <li><a class="dropdown-item" href="Pages/ChannelGateItem.html">Channel Gate Item</a></li>
+
+
+                        </ul>
+                    </li>
+
+                    <a class="nav-link" aria-current="page" href="Pages/Location.html" style="color: rgb(255, 56, 56);">
+                        Location</a>
+
+                </ul>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" id="search" placeholder="Search" aria-label="Search"
+                        onchange="openPage()">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- banner section -->
+    <!-- <div class="banner">
+        <img src="banner.jpg" alt="" class="banner-img">
+    </div> -->
+
+    <div class="banner">
+        <p class="brand_name">Shree Chamunda Traders</p>
+        <p class="brand_slogan" style="font-family:  'Josefin Sans', sans-serif;">Quality aur Quantity ka Badshah</p>
+    </div>
+
+
+    <!-- CTA -->
+    <div class="CTA">
+
+        <a href="tel:9033826436" id="call__now"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+            </svg> &nbsp; Call Now</a>
+
+        <a href="mailto:shreechamundatraders2021@gmail.com" id="mail__us"><svg xmlns="http://www.w3.org/2000/svg"
+                width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                <path
+                    d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z" />
+            </svg> &nbsp; Mail Us</a>
+
+
+    </div>
+
+    <!-- product section -->
+    <h4 style="text-align: center; margin-top: 10px;">Products</h4>
+    <div class="products-container">
+        <hr>
+
+
+
+
+
+
+
+
+
+
+        <div class="product">
+            <a href="Pages/GateItems.html" class="product__click" style="text-align: center;">
+                <img src="Images/gateItem.jpg" alt="" class="product__image">
+
+                <p>Gate Items</p>
+            </a>
+
+        </div>
+        <div class="product">
+            <a href="Pages/ChannelGateItem.html" class="product__click" style="text-align: center;">
+                <img src="Images/bal.jpg" alt="" class="product__image">
+
+                <p>Channel gate Items</p>
+            </a>
+
+
+        </div>
+        <div class="product">
+            <a href="Pages/Designs.html" class="product__click" style="text-align: center;">
+                <img src="Images/design.png" alt="" class="product__image">
+
+                <p>Designs</p>
+            </a>
+        </div>
+        <div class="product">
+            <a href="Pages/ShutterItems.html" class="product__click" style="text-align: center;">
+                <img src="Images/shutterItem.jpg" alt="" class="product__image">
+
+                <p>Shutter align-items</p>
+            </a>
+        </div>
+        <div class="product">
+            <a href="Pages/OtherFabrication.html" class="product__click" style="text-align:center;">
+                <img src="Images/otherFabrication.jpg" alt="" class="product__image">
+
+                <p>Other Fabrications</p>
+            </a>
+
+
+
+
+
+
+        </div>
+
+
+    </div>
+    <div class="pdf__download">
+        <a href="product rate1.pdf " download style="background-color: green;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download"
+                viewBox="0 0 16 16">
+                <path
+                    d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                <path
+                    d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+            </svg>
+            &nbsp;
+            Products Rates PDF</a>
+    </div>
+    <!--Div where the WhatsApp will be rendered-->
+
+
+
+    <!-- footer -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="orange" fill-opacity="1"
+            d="M0,160L48,165.3C96,171,192,181,288,202.7C384,224,480,256,576,240C672,224,768,160,864,122.7C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+        </path>
+    </svg>
+    <div class="footer">
+        <p>&copy; Copyright 2021 Shri Chamunda Rolling Shutters</p>
+    </div>
+
+
+    <script src="bootstrap.js"></script>
+    <script src="SearchEngineJS\searchAlgorith.js"></script>
+
+</body>
+
+</html>
